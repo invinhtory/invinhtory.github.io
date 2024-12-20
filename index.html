@@ -3,145 +3,33 @@
     <title>Vinh Nguyen</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      body {
-        font-family: "Rubik", monospace;
-        margin: 0;
-        padding: 40px;
-        display: block;
-        min-height: 100vh;
-        font-size: 1rem;
-        color: ghostwhite;
-        background-color: #262626;
-        /* Add this line to make all text bigger */
-      }
-
-      h1 {
-        font-size: 2rem;
-        /* Make heading even bigger */
-      }
-
-      p {
-        font-size: 1.2rem;
-        /* Make paragraphs bigger */
-        line-height: 1.1;
-        /* Add this for better spacing between lines */
-      }
-
-      .container {
-        display: flex;
-        max-width: 1200px;
-        margin: 0 auto;
-        gap: 40px;
-      }
-
-      .text-content {
-        flex: 1;
-      }
-
-      .image-content {
-        flex: 1;
-      }
-      
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #262626;
-      }
-
-      li {
-        float: left;
-      }
-
-      li a {
-        display: flex;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      /* Change the link color to #111 (black) on hover */
-      li a:hover {
-        background-color: #111;
-        color: #489d48;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      .button-container {
-        display: flex;
-        gap: 20px;
-        margin-top: 40px;
-      }
-
-      button {
-        padding: 10px 30px;
-        font-family: "Rubik", monospace;
-        font-size: 16px;
-        border: 1px solid #000;
-        background: #ebffeb;
-        cursor: pointer;
-        border-radius: 10px;
-      }
-
-      button:hover {
-        background: #489d48;
-      }
-
-      a {
-        color: #ebffeb;
-        text-decoration: underline;
-      }
-
-      a:hover {
-        background: ghostwhite;
-        color: #489d48;
-        text-decoration: none;
-      }
-
-      @media (max-width: 768px) {
-        .container {
-          flex-direction: column;
-        }
-      }
-    </style>
+    <link rel = "stylesheet" href = "/css/style.css">
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/research">Research</a></li>
-        <li><a href="/personal">Personal Projects</a></li>
-        <li><a href="/assets/VinhNguyen_Resume_202410.pdf">CV</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class = "topnav">
+      <a href="/">Home</a>
+      <a href="/research">Work & Research</a>
+      <a href="/personal">Personal</a>
+      <a href="/assets/VinhNguyen_Resume_202410.pdf">CV</a>
+      <a href="/contact">Contact</a>
+    </div>
+
+    <div class="image-content">
+        <img src="assets/placeholder_propic.jpg" alt="Vinh's headshot">
+      </div>
 
     <div class="container">
       <div class="text-content">
         <p><b>Hi, I'm Vinh! </b>I am a PhD student at the <a href="https://depts.washington.edu/infab/" target="_blank">Integrated Fabrication Laboratory</a>
           in <a href="https://www.me.washington.edu/" target="_blank">Mechanical Engineering</a> at the University of Washington, advised by Professor Corie L. Cobb. </p> 
 
-        <p>My research centers on developing novel fabrication workflows to unlock new functional and creative possibilities device design. I work at the intersection of additive manufacturing (AM), materials science, and computer-aided design (CAD) systems. Currently, I am working on <a>printing Lithium-ion batteries</a> and integrating them into <a>printed electronics</a>. </p>
+        <p>My research centers on developing novel fabrication workflows to unlock new functional and creative possibilities device design. I work at the intersection of additive manufacturing (AM), materials science, and computer-aided design (CAD) systems. Currently, I am working on <a>AM of Lithium-ion batteries</a> and integrating them into <a>printed electronics</a>. I have also worked previously on fabrication workflows for nano-wire bundles </p>
         
         <p>I also work on some personal projects that explore the creative side of fabrication and science. Feel free to check them out!</p>
-
-        <div class="button-container">
-          <button onclick="window.location.href='research/'">Functional Things</button>
-          <button onclick="window.location.href='personal/'">Creative Stuff</button>
-        </div>
       </div>
 
-      <div class="image-content">
-        <img src="assets/placeholder_propic.jpg" alt="Vinh's headshot">
-      </div>
+      
     </div>
   </body>
 </html>
