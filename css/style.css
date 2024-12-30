@@ -6,7 +6,8 @@ body {
   min-height: 100vh;
   font-size: 1rem;
   color: ghostwhite;
-  background-color: #595959;
+  /* background-color: #595959; */
+  background-color: #0D170D
   /* Add this line to make all text bigger */
 }
 
@@ -24,13 +25,14 @@ body {
 
 .project-title {
   font-size: 1.3rem;
-  line-height: 1.2;
+  line-height: 1.1;
   font-weight: bold;
 }
 
 .project-author {
   font-size: 1.1rem;
-  line-hiehgt: 1.1;
+  line-hiehgt: 1;
+  text-decoration: none;
 }
 
 /* Style the top navigation bar */
@@ -68,6 +70,7 @@ body {
 
 .image-content {
   flex: 1;
+  max-width: 1200px;
 }
 
 ul {
@@ -135,6 +138,77 @@ a:hover {
 .project-container {
   padding:20px 20px;
   flex:1;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #595959;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+#projectContainer {
+  height: 300px;
+  display: grid;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+#projectContainer div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#projectContainer div:hover {
+  background-color: #ebffeb;
+  opacity: 0.3;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #595959;
+  padding: 10px;
+  text-align: center;
 }
 
 
