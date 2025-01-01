@@ -7,7 +7,7 @@ body {
   font-size: 1rem;
   color: ghostwhite;
   /* background-color: #595959; */
-  background-color: #0D170D
+  background-color: #11170D
   /* Add this line to make all text bigger */
 }
 
@@ -24,21 +24,26 @@ body {
 }
 
 .project-title {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.1;
   font-weight: bold;
 }
 
 .project-author {
   font-size: 1.1rem;
-  line-hiehgt: 1;
+  line-height: 1;
   text-decoration: none;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  text-align: left;
 }
 
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #595959;
+  background-color: #11170D;
 }
 
 /* Style the topnav links */
@@ -53,7 +58,7 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #111;
+  background-color: #494d45;
   color: #489d48;
 }
 
@@ -71,32 +76,6 @@ body {
 .image-content {
   flex: 1;
   max-width: 1200px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #595959;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: flex;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-  color: #489d48;
 }
 
 img {
@@ -135,25 +114,20 @@ a:hover {
   text-decoration: none;
 }
 
-.project-container {
-  padding:20px 20px;
-  flex:1;
-}
-
 /* Style the header */
 .header {
   grid-area: header;
-  background-color: #595959;
+  background-color: #11170D;
   padding: 30px;
   text-align: center;
   font-size: 35px;
 }
 
 #projectContainer {
-  height: 300px;
+  height: auto;
   display: grid;
   gap: 10px;
-  background-color: #2196F3;
+  background-color: #11170D;
   padding: 10px;
   grid-template-columns: auto auto auto;
 }
@@ -172,57 +146,38 @@ a:hover {
   font-size: 30px;
 }
 
-/* The grid container */
-.grid-container {
-  display: grid;
-  grid-template-areas: 
-    'header header header header header header' 
-    'left left middle middle right right' 
-    'footer footer footer footer footer footer';
-  /* grid-column-gap: 10px; - if you want gap between the columns */
-} 
-
-.left,
-.middle,
-.right {
-  padding: 10px;
-}
-
-/* Style the left column */
-.left {
-  grid-area: left;
-}
-
-/* Style the middle column */
-.middle {
-  grid-area: middle;
-}
-
-/* Style the right column */
-.right {
-  grid-area: right;
-}
-
 /* Style the footer */
 .footer {
   grid-area: footer;
-  background-color: #595959;
+  background-color: #11170D;
   padding: 10px;
   text-align: center;
 }
 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
 
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
 
-@media (max-width: 768px) {
+@media screen and (max-width: 990px) {
   .container {
     flex-direction: column;
   }
-  .project-grid {
-    grid-template-areas: 
-      'header header header header header header' 
-      'left left left left left left' 
-      'middle middle middle middle middle middle' 
-      'right right right right right right' 
-      'footer footer footer footer footer footer';
+  #projectContainer{
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #projectContainer{
+    grid-template-columns: auto;
   }
 }
