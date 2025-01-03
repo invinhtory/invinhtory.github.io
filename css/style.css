@@ -24,9 +24,10 @@ body {
 }
 
 .project-title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.1;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .project-author {
@@ -38,6 +39,12 @@ body {
 .project-description {
   font-size: 0.9rem;
   text-align: left;
+}
+
+.project-thumbnail{
+  flex:1;
+  width: 100%;
+  height: auto;
 }
 
 /* Style the top navigation bar */
@@ -66,6 +73,7 @@ body {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+  padding:20px;
   gap: 40px;
 }
 
@@ -155,9 +163,9 @@ a:hover {
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
   text-align: center;
   text-decoration: none;
 }
@@ -165,6 +173,35 @@ a:hover {
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ebffeb;
+}
+
+.container:hover .overlay {
+  opacity: 0.6;
+}
+
+.overlay-text {
+  color: ghostwhite;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 @media screen and (max-width: 990px) {
