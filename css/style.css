@@ -23,6 +23,10 @@ body {
   /* Add this for better spacing between lines */
 }
 
+.project-column{
+  width: 33.333333%;
+}
+
 .project-title {
   font-size: 1.7rem;
   line-height: 1.1;
@@ -39,12 +43,14 @@ body {
 .project-description {
   font-size: 0.9rem;
   text-align: left;
+  font-family: "Rubik", sans-serif;
 }
 
 .project-thumbnail{
   flex:1;
   width: 100%;
   height: auto;
+  padding: 10px;
 }
 
 /* Style the top navigation bar */
@@ -162,6 +168,12 @@ a:hover {
   text-align: center;
 }
 
+.footer-text{
+  font-size:.9rem;
+  text-align:center;
+  padding: 0px;
+}
+
 .fa {
   padding: 10px;
   font-size: 20px;
@@ -211,10 +223,16 @@ a:hover {
   #projectContainer{
     grid-template-columns: auto auto;
   }
+  .project-column{
+    width:49.9%;
+  }
 }
 
 @media screen and (max-width: 600px){
   #projectContainer{
     grid-template-columns: auto;
+  }
+  .project-column{
+    width:100%;
   }
 }
