@@ -24,7 +24,7 @@ body {
 }
 
 .project-column{
-  width: 33.333333%;
+  width: 100%;
 }
 
 .project-title {
@@ -48,9 +48,15 @@ body {
 
 .project-thumbnail{
   flex:1;
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 10px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.caption{
+  font-size:0.9rem;
 }
 
 /* Style the top navigation bar */
@@ -221,18 +227,12 @@ a:hover {
     flex-direction: column;
   }
   #projectContainer{
-    grid-template-columns: auto auto;
-  }
-  .project-column{
-    width:49.9%;
+    grid-template-columns: 49.95% 49.95%;
   }
 }
 
 @media screen and (max-width: 600px){
   #projectContainer{
     grid-template-columns: auto;
-  }
-  .project-column{
-    width:100%;
   }
 }
