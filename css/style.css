@@ -25,7 +25,7 @@ body {
 
 .project-column{
   width: 100%;
-  height: 25rem;
+  height: 95%;
   border: 2px solid #ebffeb;
   border-radius: 15px;
   overflow: hidden;
@@ -256,8 +256,5 @@ a:hover {
   #projectContainer{
     gap: 10px;
     grid-template-columns: auto;
-  }
-  .project-column{
-    height: 35rem;
   }
 }
